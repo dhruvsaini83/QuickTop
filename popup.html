@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickTop</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-icon">
+      <svg viewBox="0 0 24 24" fill="white">
+        <polygon points="12,3 20,13 15.5,13 15.5,21 8.5,21 8.5,13 4,13" />
+      </svg>
+    </div>
+    <h1>QuickTop</h1>
+    <p>Jump back to the top of any page in one click!</p>
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+
+    <!-- Enable/disable toggle -->
+    <div class="toggle-card" id="toggle-card">
+      <div class="toggle-card-text">
+        <div class="label">Enable Extension</div>
+        <div class="sublabel">Button will appear on all websites</div>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="enabled-toggle" checked />
+        <div class="toggle-track"></div>
+      </label>
+    </div>
+
+    <!-- Settings label -->
+    <div class="section-label">Settings</div>
+
+    <!-- Settings card -->
+    <div class="settings-card">
+
+      <!-- Scroll threshold -->
+      <div class="setting-row">
+        <div class="setting-row-inner">
+          <label for="threshold-slider">Show button after scrolling</label>
+          <div class="sublabel">In percentage</div>
+        </div>
+        <div class="slider-container">
+          <input type="range" id="threshold-slider" min="5" max="80" value="20" step="5" />
+          <span class="slider-val" id="threshold-val">20%</span>
+        </div>
+      </div>
+
+      <!-- Button position -->
+      <div class="setting-row">
+        <div class="setting-row-inner">
+          <label>Button Position</label>
+          <div class="sublabel">Where to show on screen</div>
+        </div>
+        <div class="position-group" id="pos-group">
+          <button class="pos-btn" data-pos="bottom-left" id="pos-bl">↙ Left</button>
+          <button class="pos-btn active" data-pos="bottom-right" id="pos-br">↘ Right</button>
+        </div>
+      </div>
+
+      <!-- Button color -->
+      <div class="setting-row">
+        <div class="setting-row-inner">
+          <label>Button Color</label>
+          <div class="sublabel">Choose your style</div>
+        </div>
+        <div class="color-group" id="color-group">
+          <div class="color-swatch active" data-color="purple" style="background: linear-gradient(135deg,#667eea,#764ba2)" title="Purple"></div>
+          <div class="color-swatch" data-color="pink" style="background: linear-gradient(135deg,#f093fb,#f5576c)" title="Pink"></div>
+          <div class="color-swatch" data-color="teal" style="background: linear-gradient(135deg,#4facfe,#00f2fe)" title="Teal"></div>
+          <div class="color-swatch" data-color="green" style="background: linear-gradient(135deg,#43e97b,#38f9d7)" title="Green"></div>
+          <div class="color-swatch" data-color="orange" style="background: linear-gradient(135deg,#fa8231,#f7b733)" title="Orange"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-card">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24">
+          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+          <polyline points="17 6 23 6 23 12"/>
+        </svg>
+      </div>
+      <div class="stat-text">
+        <div class="stat-value" id="click-count">0</div>
+        <div class="stat-label">Times scroll to top clicked</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span class="footer-text">QuickTop v1.0</span>
+      <span class="status-badge active" id="status-badge">
+        <span class="status-dot"></span>
+        <span id="status-text">Active</span>
+      </span>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
