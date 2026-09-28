@@ -17,6 +17,10 @@
 
 ---
 
+<p align="center">
+  <video src="assets/finalVideo.mp4" controls width="100%" poster="assets/poster.png"></video>
+</p>
+
 ## ✨ Features
 
 - 🎯 **Circular Scroll Progress Ring**: Real-time circular progress indicator showing exactly how far down the page you've scrolled.
