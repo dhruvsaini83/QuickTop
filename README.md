@@ -18,7 +18,7 @@
 ---
 
 <p align="center">
-  <video src="assets/finalVideo.mp4" controls width="100%" poster="assets/poster.png"></video>
+  <video src="assets/videofinal.mp4" controls width="100%" poster="assets/poster.png"></video>
 </p>
 
 ## ✨ Features
