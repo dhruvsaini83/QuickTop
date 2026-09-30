@@ -75,6 +75,9 @@ You can easily load and run this extension locally in Google Chrome or any Chrom
 
 ```plaintext
 QuickTop/
+├── 📁 assets/            
+│   ├── poster.png
+│   ├── videofinal.mp4
 ├── 📁 icons/             # App icons (16x16, 48x48, 128x128)
 │   ├── icon16.png
 │   ├── icon48.png
